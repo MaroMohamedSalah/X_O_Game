@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X - O online game</title>
+    <!-- link to style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link to normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- add awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- change tab img -->
+    <link rel="icon" href="image/264118066.jpg">
+</head>
+
+<body>
+    <div class="signUp" id="signUp">
+        <div class="container">
+            <input class="user" type="text" placeholder="Your Name" id="username">
+            <!-- <label for="imge">Add Your Image:</label>
+            <input class="imge" type="file" accept="image/png, image/jpeg" name="imge" id="img"> -->
+            <button id="signUpBtn" class="btn">Sign Up</button>
+        </div>
+    </div>
+    <div class="done" id="done">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="wellcome" id="wellcome">
+    </div>
+    <div class="who" id="who">
+        <h1>Who Will Play?</h1>
+        <div>
+            <div id="one">
+                <i class="fa-solid fa-user-check"></i>
+                <h3>You with another player</h3>
+            </div>
+            <div id="two">
+                <i class="fa-solid fa-people-robbery"></i>
+                <h3>Two unknown players</h3>
+            </div>
+        </div>
+    </div>
+    <div class="vs" id="vs">
+        <div class="names" id="names">
+        </div>
+        <div class="btn" id="next1">Next</div>
+    </div>
+    <div class="vs" id="vs2">
+        <div class="names" id="names2">
+        </div>
+        <div class="btn" id="next2">Next</div>
+    </div>
+    <div class="ch" id="ch">
+        <h1>username:</h1>
+        <div class="xo">
+            <span id="x"><i class="fa-solid fa-x"></i></span>
+            <span class="or">OR</span>
+            <span id="o"><i class="fa-solid fa-o"></i></span>
+        </div>
+    </div>
+    <div class="playBody" id="playBody">
+        <h1 id="over">Game Over</h1>
+        <div class="xobody" id="xoBody">
+            <div id="0,0"></div>
+            <div id="0,1"></div>
+            <div id="0,2"></div>
+            <div id="1,0"></div>
+            <div id="1,1"></div>
+            <div id="1,2"></div>
+            <div id="2,0"></div>
+            <div id="2,1"></div>
+            <div id="2,2"></div>
+        </div>
+        <div class="info" id="info">
+            <div class="arrowL" id="arL">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <h1 id="mainUser"></h1>
+            <h3>VS</h3>
+            <h1 id="secondUser"></h1>
+            <div class="arrowR" id="arR">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </div>
+        <div class="score" id="score">
+            <span id="score1">0</span> - <span id="score2">0</span>
+            <div title="New Game" class="reGame" id="reGame">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
