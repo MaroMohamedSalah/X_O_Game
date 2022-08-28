@@ -586,11 +586,6 @@ function whoWin(){
         }, 3000);
     }
 }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 3171a6b24b5cdfd4346a95800b26ecf2bf2c1479
 function restart(){
     let oneAndOne;
     reGame.style.opacity = '1';
