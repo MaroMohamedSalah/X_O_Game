@@ -46,8 +46,6 @@ let score2 = document.getElementById('score2');
 
 let changeUserName = document.getElementById('change');
 let reGame = document.getElementById('reGame');
-<<<<<<< HEAD
-=======
 //sign up
     // localStorage.setItem('username' , '');
     if(localStorage.getItem('username') === ''){
@@ -63,7 +61,6 @@ let reGame = document.getElementById('reGame');
     // who will play ?
     whoWillPlay();    
 }
->>>>>>> 72cb33a51ec07e431e3cd11f405cb6915c28d25c
 signUpBtn.onclick = () => {
     if(userName.value === ''){
         window.alert("enter your name")
