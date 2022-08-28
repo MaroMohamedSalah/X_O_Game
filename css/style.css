@@ -147,12 +147,14 @@ ul{
     top: 0;
     left: 13px;
     font-size: 9px;
+    z-index: 500;
 }
 .wellcome #change{
     margin-left: 11px;
     font-size: 14px;
     color: var(--secondColor);
     cursor: pointer;
+    z-index: 500;
 }
 /* who will play  */
 .who{
@@ -635,6 +637,10 @@ ul{
 @media (max-width: 768px) {
     .playBody{
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .playBody .xobody {
         width: 300px;
@@ -655,6 +661,27 @@ ul{
     .playBody .xobody div:nth-of-type(4)::after{
         width: 285px;
     }
+    .playBody .info{
+        width: 85%;
+    }
+    .playBody .info h1{
+        font-size: 15px;
+        min-width: 129px;
+    }
+    .playBody .info #secondUser{
+        margin-left: -26px;
+    }
+    .playBody .info #mainUser{
+        margin-right: -26px;
+    }
+    .playBody .info h3{
+        color: var(--secondColor);
+    }
+    .playBody .info h1 span{
+        margin: 10px;
+        color: var(--font2-color);
+    }
+
 }
   /* Medium */
 @media (max-width: 992px) {
