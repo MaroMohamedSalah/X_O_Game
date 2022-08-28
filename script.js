@@ -62,7 +62,7 @@ signUpBtn.onclick = () => {
         done.style.opacity = '1';
         setTimeout(() => {
             done.style.opacity = '0';
-            wellcome.innerHTML = `<h1>welcome, <span>${localStorage.getItem('username')}</span> <span id='change'><i class="fa-solid fa-user-pen"></i></span></h1>`;
+            wellcome.innerHTML = `<h1>wellcome, <span>${localStorage.getItem('username')}</span> <span id='change'><i class="fa-solid fa-user-pen"></i></span></h1>`;
         }, 1500);
         setTimeout(() => {
             whoWillPlay();
@@ -99,7 +99,7 @@ function whoWillPlay(){
     who.style.opacity = '1';
     signUp.style.display = 'none';
     done.style.zIndex = '-1';
-    wellcome.innerHTML = `<h1>welcome, <span>${localStorage.getItem('username')}</span> <span id='change'><i class="fa-solid fa-user-pen"></i></span></h1>`;
+    wellcome.innerHTML = `<h1>wellcome, <span>${localStorage.getItem('username')}</span> <span id='change'><i class="fa-solid fa-user-pen"></i></span></h1>`;
     let changeUserName = document.getElementById('change');
     changeUserName.onclick = () =>{
         let newUser = prompt('Enter your new username .. ' , localStorage.getItem('username'));
