@@ -587,9 +587,8 @@ function whoWin(){
     }
 }
 
-let oneAndOne;
-
 function restart(){
+    let oneAndOne;
     reGame.style.opacity = '1';
     gameOver();
     if(oneAndOne !== 1 ){
