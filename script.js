@@ -48,7 +48,7 @@ let changeUserName = document.getElementById('change');
 let reGame = document.getElementById('reGame');
 signUpBtn.onclick = () => {
     if(userName.value === ''){
-        window.alert("enter your name")
+        window.alert("enter your name");
     }else{
         localStorage.setItem('username' , userName.value);
         names.innerHTML = `
@@ -587,9 +587,9 @@ function whoWin(){
     }
 }
 function restart(){
-    let oneAndOne;
     reGame.style.opacity = '1';
     gameOver();
+    let oneAndOne;
     if(oneAndOne !== 1 ){
         turn = 0;
         oneAndOne = 1;
