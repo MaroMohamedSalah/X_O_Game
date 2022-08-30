@@ -46,6 +46,12 @@ let score2 = document.getElementById('score2');
 
 let changeUserName = document.getElementById('change');
 let reGame = document.getElementById('reGame');
+
+let socialMedia = document.getElementById('follow');
+let follow = document.getElementById('f');
+let ex = document.getElementById('ex');
+let re = document.getElementById('re');
+
 signUpBtn.onclick = () => {
     if(userName.value === ''){
         window.alert("enter your name")
@@ -254,6 +260,7 @@ function XorO2(){
 
 // xo game 
 function xo() {
+    media()
         D0_0.onclick = () =>{
             if(D0_0.textContent === '' && turn !== 1){
                 D0_0.innerHTML = `<span>${P1chosen}</span>`;
@@ -638,4 +645,62 @@ function gameOver(){
 }
 reGame.onclick = () =>{
     location.reload();
+}
+
+function media(){
+    setTimeout(() => {
+        socialMedia.style.left = '-320px'
+    }, 5000);
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        setTimeout(() => {
+            socialMedia.style.left = '-55px'
+        }, 5000);
+    }
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        setTimeout(() => {
+            socialMedia.style.left = '-80px'
+        }, 5000);
+    }
+    setTimeout(() => {  
+        follow.style.opacity = '0';      
+        ex.style.opacity = '1';
+        ex.style.zIndex = '20';
+        re.style.opacity = '0';
+        re.style.zIndex = '-1';
+        ex.onclick = () =>{
+            socialMedia.style.left = '-670px'
+
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                socialMedia.style.left = '-132px'
+            }
+            if (window.matchMedia("(min-width: 992px)").matches) {
+                socialMedia.style.left = '-221px'
+        }
+
+            re.style.opacity = '1'
+            ex.style.opacity = '0'
+
+            re.style.zIndex = '20';
+            ex.style.zIndex = '-1';
+            setTimeout(() => {
+                follow.style.opacity = '1';
+            }, 1000);
+        }
+    }, 10000);
+    re.onclick = () =>{
+        socialMedia.style.left = '-320px';
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            socialMedia.style.left = '-55px';
+        }
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            socialMedia.style.left = '-80px';
+        }
+        setTimeout(() => {
+            ex.style.opacity = '1'
+            ex.style.zIndex = '20';
+            follow.style.opacity = '0';
+        }, 5000);
+        re.style.opacity = '0'
+        re.style.zIndex = '-1';
+    }
 }
