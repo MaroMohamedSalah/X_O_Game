@@ -683,7 +683,7 @@ ul{
     }
 }
   /* Medium */
-@media (min-width: 992px) {
+@media (min-width: 789px) and (max-width: 992px) {
     .playBody{
         width: 74%;
         display: flex;
@@ -785,11 +785,21 @@ ul{
 /* Small */
 @media (max-width: 768px){
     .playBody .followMe{
-        top: -175px;
-        left: -132px;
+        /* left: 50%; */
+        left:  -140px;
+        display: flex;
+        flex-direction: row;
+        width: 329px;
+        height: 10px;
+        top: 442px;
+        transform: translateX(-63%);
+        gap: 25px;
+    }
+    .playBody .followMe .ex{
+        top: -20px;
     }
 }
-@media (min-width: 992px){
+@media (min-width: 789px) and (max-width: 992px){
     .playBody .followMe{
         left: -221px;
     }

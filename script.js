@@ -653,10 +653,10 @@ function media(){
     }, 5000);
     if (window.matchMedia("(max-width: 768px)").matches) {
         setTimeout(() => {
-            socialMedia.style.left = '-55px'
+            socialMedia.style.left = '50%'
         }, 5000);
     }
-    if (window.matchMedia("(min-width: 992px)").matches) {
+    if (window.matchMedia("(min-width: 789px) and (max-width: 992px)").matches) {
         setTimeout(() => {
             socialMedia.style.left = '-80px'
         }, 5000);
@@ -671,9 +671,9 @@ function media(){
             socialMedia.style.left = '-670px'
 
             if (window.matchMedia("(max-width: 768px)").matches) {
-                socialMedia.style.left = '-132px'
+                socialMedia.style.left = '-140px'
             }
-            if (window.matchMedia("(min-width: 992px)").matches) {
+            if (window.matchMedia("(min-width: 789px) and (max-width: 992px)").matches) {
                 socialMedia.style.left = '-221px'
         }
 
@@ -690,9 +690,9 @@ function media(){
     re.onclick = () =>{
         socialMedia.style.left = '-320px';
         if (window.matchMedia("(max-width: 768px)").matches) {
-            socialMedia.style.left = '-55px';
+            socialMedia.style.left = '50%';
         }
-        if (window.matchMedia("(min-width: 992px)").matches) {
+        if (window.matchMedia("(min-width: 789px) and (max-width: 992px)").matches) {
             socialMedia.style.left = '-80px';
         }
         setTimeout(() => {
