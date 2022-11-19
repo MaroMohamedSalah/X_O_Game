@@ -23,7 +23,7 @@ let playerWithPlayer = document.getElementById('two');
 let next2 = document.getElementById('next2');
 let names2 = document.getElementById("names2");
 let vs2 = document.getElementById('vs2');
-let turn ;
+let turn = 0 ;
 let arrowR = document.getElementById('arR');
 let arrowL = document.getElementById('arL');
 let P1chosen;
@@ -595,21 +595,10 @@ function whoWin(){
 }
 
 function restart(){
-    let oneAndOne;
+    console.log(turn);
+    let oneAndOne = 0;
     reGame.style.opacity = '1';
     gameOver();
-    if(oneAndOne !== 1 ){
-        turn = 0;
-        oneAndOne = 1;
-        arrowR.style.opacity = '1'
-        arrowL.style.opacity = '0'
-    }else{
-        turn = 1;
-        oneAndOne = 0;
-        arrowR.style.opacity = '0'
-        arrowL.style.opacity = '1'
-    }
-
     D0_0.innerHTML = '';
     D0_1.innerHTML = '';
     D0_2.innerHTML = '';
@@ -633,7 +622,6 @@ function restart(){
 }
 function gameOver(){
     if(D0_0.innerHTML !== '' && D0_1.innerHTML !== '' && D0_2.innerHTML !== '' && D1_0.innerHTML !== '' && D1_1.innerHTML !== '' && D1_2.innerHTML !== '' && D2_0.innerHTML !== '' && D2_1.innerHTML !== '' && D2_2.innerHTML !== ''){
-        console.log('game over');
         xoBody.style.opacity = '0';
         gameover.style.opacity = '1';
         setTimeout(() => {
